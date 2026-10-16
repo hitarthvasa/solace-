@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solace
 
-## Getting Started
+A multi-agent mental wellness app. *Therapy can be expensive, but sometimes presence itself matters.*
 
-First, run the development server:
+Solace (earlier called Echo) is a calm place to check in with yourself, find support and build small daily habits.
+
+> Solace is a supportive tool, not a replacement for professional mental health care. If you are in crisis, please contact a local helpline or someone you trust.
+
+<!-- Add a screenshot or short GIF of the app here: ![Solace dashboard](screenshots/dashboard.png) -->
+
+## Features
+
+- **Sign in** with authentication
+- **Dashboard and profile**
+- **Find Someone**, to connect with support
+- **Resources and insights**
+- **Chat agent** to talk things through
+- **Self-practice tools:** meditation timer, breathing exercises, soothing sounds, journaling, Gita reading and random quotes
+
+## Design approach
+
+Calm, realistic and human. It is meant to feel like a real, gentle product, not an "AI app", so it avoids anything too pink, childish or full of emoji.
+
+## Built with
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [Supabase](https://supabase.com/) for authentication and data
+- [Tailwind CSS](https://tailwindcss.com/) and [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/) for animation
+- [Lucide](https://lucide.dev/) icons
+
+## Run it locally
+
+```bash
+git clone https://github.com/hitarthvasa/solace-.git
+cd solace-
+npm install
+```
+
+Create a file called `.env.local` in the project folder and add your own Supabase project details:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+Then start it:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Never commit your `.env.local` file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Ideas for next
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Daily quote reminders
+- A focus mode
+- Mood-based colour themes
+- An audio-call agent
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by [Hitarth Vasa](https://github.com/hitarthvasa).
